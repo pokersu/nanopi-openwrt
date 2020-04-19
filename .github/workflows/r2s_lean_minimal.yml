@@ -175,5 +175,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@master
         with:
-          name: FriendlyWrt_NanoPi-R2S
+          name: FriendlyWrt_NanoPi-R2S-minimal
           path: ./artifact/
