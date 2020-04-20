@@ -91,9 +91,10 @@ jobs:
           CONFIG_PACKAGE_luci-app-unblockmusic=n
           CONFIG_PACKAGE_luci-app-v2ray-server=n
           CONFIG_PACKAGE_luci-app-ddns=n
+          CONFIG_PACKAGE_luci-app-vlmcsd=n
           CONFIG_PACKAGE_luci-theme-argon=y
-          CONFIG_PACKAGE_luci-theme-material=y
-          CONFIG_PACKAGE_luci-theme-netgear=y
+          CONFIG_PACKAGE_luci-theme-material=n
+          CONFIG_PACKAGE_luci-theme-netgear=n
           CONFIG_PACKAGE_kmod-rtl8xxxu=y
           CONFIG_UnblockNeteaseMusic_Go=n
           CONFIG_UnblockNeteaseMusic_NodeJS=n
