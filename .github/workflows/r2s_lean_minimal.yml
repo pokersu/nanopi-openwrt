@@ -91,7 +91,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-unblockmusic=n
           CONFIG_PACKAGE_luci-app-v2ray-server=n
           CONFIG_PACKAGE_luci-app-ddns=n
-          CONFIG_PACKAGE_luci-app-vssr=n
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-material=y
           CONFIG_PACKAGE_luci-theme-netgear=y
@@ -127,16 +126,6 @@ jobs:
           git checkout upstream/master -- feeds.conf.default
           sed -i '5s/#src-git/src-git/g' feeds.conf.default
           cd package/lean/
-          #git clone https://github.com/jerrykuku/lua-maxminddb.git
-          #git clone https://github.com/jerrykuku/luci-app-vssr.git
-          #cd luci-app-vssr/root/etc/
-          #echo 'china_ssr.txt
-          #config/black.list
-          #config/white.list
-          #dnsmasq.oversea/oversea_list.conf
-          #dnsmasq.ssr/ad.conf
-          #dnsmasq.ssr/gfw_base.conf' | xargs rm
-          #cd ../../../
           rm -rf luci-theme-argon
           git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
           cd ../../
@@ -167,5 +156,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@master
         with:
-          name: FriendlyWrt_NanoPi-R2S-minimal
+          name: FriendlyWrt_NanoPi-R2S-Minimal
           path: ./artifact/
