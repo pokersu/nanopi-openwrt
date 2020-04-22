@@ -72,8 +72,11 @@ jobs:
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_luci-app-netdata=y
           CONFIG_LIBSODIUM_MINIMAL=y
+          CONFIG_PACKAGE_ddns-scripts=n
+          CONFIG_PACKAGE_ddns-scripts_dnspod=n
           CONFIG_PACKAGE_ddns-scripts_aliyun=n
           CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4=n
+          CONFIG_PACKAGE_luci-app-ddns=n
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
@@ -90,7 +93,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-uhttpd=n
           CONFIG_PACKAGE_luci-app-unblockmusic=n
           CONFIG_PACKAGE_luci-app-v2ray-server=n
-          CONFIG_PACKAGE_luci-app-ddns=n
           CONFIG_PACKAGE_luci-app-vlmcsd=n
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-material=n
