@@ -161,3 +161,4 @@ jobs:
         with:
           name: FriendlyWrt_NanoPi-R2S-Minimal
           path: ./artifact/
+
