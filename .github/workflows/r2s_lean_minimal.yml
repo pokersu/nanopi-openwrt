@@ -69,6 +69,7 @@ jobs:
           CONFIG_PACKAGE_pigz=y
           CONFIG_PACKAGE_unzip=y
           CONFIG_PACKAGE_losetup=y
+          CONFIG_PACKAGE_screen=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_luci-app-netdata=y
           CONFIG_LIBSODIUM_MINIMAL=y
